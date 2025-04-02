@@ -149,3 +149,10 @@ Run **integration tests**:
 ```sh
 go test ./test/integration/...
 ```
+
+
+## Screengrabs
+
+<img width="535" alt="image" src="https://github.com/user-attachments/assets/eef767bb-d410-4804-8134-8aaef5c167c7" />
+
+<img width="540" alt="image" src="https://github.com/user-attachments/assets/84165a1d-e407-4822-a567-7c7475085eda" />
