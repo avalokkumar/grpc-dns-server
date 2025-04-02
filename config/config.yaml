@@ -1,0 +1,17 @@
+# List of upstream DNS servers for domain resolution
+dns_servers:
+  - "8.8.8.8"
+  - "8.8.4.4"
+
+# Cache configuration
+cache:
+  enabled: true  # Enable or disable caching
+  ttl: 300       # Time-to-live for cached entries in seconds
+
+# Logging configuration
+logging:
+  level: "info"  # Logging level (e.g., debug, info, warn, error)
+
+# gRPC server configuration
+grpc:
+  port: 50051    # Port on which the gRPC server will listen

@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  dns-server:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "50051:50051"
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml

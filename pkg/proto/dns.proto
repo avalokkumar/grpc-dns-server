@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "grpc-dns-server/pkg/proto";
+
+service DnsService {
+  rpc Resolve (ResolveRequest) returns (ResolveResponse);
+}
+
+message ResolveRequest {
+  string domain = 1;
+}
+
+message ResolveResponse {
+  string ip = 1;
+}
